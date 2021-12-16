@@ -29,4 +29,5 @@ Total filtered depth is >=10 and <=20
 REF and ALT both should have the depth of at least 3.
 
 
-### 
+### Count genotypes in VCF:
+vcf_genotype_count.pl
