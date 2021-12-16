@@ -18,12 +18,14 @@ vcf_MAF_Missing_Het_filter.pl file.vcf MAF(0 no filter) missing(100 no filter) h
 ### Filter VCF file based on total read depth and individual allele depth
 `vcf_INFO_AD_filter.sh file.vcf AD_positionIn_INFO >=total_filteredDP <=total_filteredDP Both_Allele_should_be_at_least`
 
-AD position in INFO
-DP is raw read depth.
-AD is filtered read depth presence as REF,ALT. Filtered total depth is REF+ALT of AD.
+1. AD position in INFO
+2. DP is raw read depth.
+3. AD is filtered read depth presence as REF,ALT. Filtered total depth is REF+ALT of AD.
 
 `vcf_INFO_AD_filter.sh file.vcf 2 10 20 3` means:
+
 Total filtered depth is >=10 and <=20
+
 REF and ALT both should have the depth of at least 3.
 
 
