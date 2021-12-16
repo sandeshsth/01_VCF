@@ -30,13 +30,16 @@ REF and ALT both should have the depth of at least 3.
 
 
 ### Count genotypes in VCF:
-vcf_genotype_count.pl
+`vcf_genotype_count.pl`
 
 ### Filter VCF based on sample DP:
 `vcf_FORMAT_sampleDP_filter_Aug2019.pl file.vcf total_samples_in_vcf_file min_depth_at_each_datapoint`
 `vcf_FORMAT_sampleDP_filter_Aug2019.pl file.vcf 17 10`
 
 It works if FORMAT is: GT:PL:DP:SP:GQ	./.:0,0,0,0,0,0,0,0,0,0:0:0:5
+
 If there is some value in DP.
+
 This won't work GT:AD:DP:GQ:PL ./. Error: Use of uninitialized value in numeric ge.
+
 Can filter for no missing and run
