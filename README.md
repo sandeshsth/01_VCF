@@ -1,7 +1,6 @@
 # Scripts to parse VCF file
 
-USAGE:
-
+## Usage:
 
 ### Filter VCF file based on MAF, Missing and Het:
 `vcf_MAF_Missing_Het_filter.pl file.vcf MAF missing% het%`
